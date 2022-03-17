@@ -118,7 +118,7 @@ def anlays(url_list_list,page):
                     print(e)
                     print('爬取失败的网址：'+url)
         dianzanlv = dianzanshu/bofangliang*100#计算点赞率
-        if shoucang!='':shoucanglv = float(shoucang)/bofangliang*100#计算收藏率
+        if shoucang!=''and shoucang!='收藏\n    ':shoucanglv = float(shoucang)/bofangliang*100#计算收藏率
         else:shoucanglv =None
         #用字典的形式存放每个视频的信息
         dic={
